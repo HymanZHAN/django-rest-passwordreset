@@ -56,11 +56,11 @@ urlpatterns = [
 
 The following endpoints are provided:
 
- * `POST ${PASSWORD_RESET_URL}/` - request a reset password token by using the ``email`` parameter
- * `POST ${PASSWORD_RESET_URL}/confirm/` - using a valid ``token``, the users password is set to the provided ``password``
- * `POST ${PASSWORD_RESET_URL}/validate_token/` - will return a 200 if a given ``token`` is valid
+ * `POST ${API_URL}/password_reset/` - request a reset password token by using the ``email`` parameter
+ * `POST ${API_URL}/password_reset/confirm/` - using a valid ``token``, the users password is set to the provided ``password``
+ * `POST ${API_URL}/password_reset/validate_token/` - will return a 200 if a given ``token`` is valid
  
-where `${PASSWORD_RESET_URL}/` is the url specified in your *urls.py* (e.g., `api/password_reset/` as in the example above)
+where `${API_URL}/` is the url specified in your *urls.py* (e.g., `api/` as in the example above)
  
 ### Signals
 
